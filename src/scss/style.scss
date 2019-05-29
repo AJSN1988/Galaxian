@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Pixellari';
+    src: url('../fonts/Pixellari 2.ttf');
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    font-family: 'Pixellari';
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .main-menu {
+        border: 1px solid red;
+        height: 600px;
+        width: 400px;
+        color: white;
+        position: relative;
+        img {
+            padding-top: 150px;
+        }
+        .username {
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            .label {
+                padding-right: 10px;
+            }
+            input {
+                font-family: 'Pixellari';
+                background: none;
+                border: none;
+                color: deepskyblue;
+                font-size: 14px;
+                width: 65px;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        .start-label {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: purple;
+        }
+        .start-wrapper {
+            margin: 0 100px;
+            text-transform: uppercase;
+            color: red;
+            font-size: 18px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .controls {
+            padding-top: 20px;
+            .label {
+                padding-bottom: 10px;
+                text-transform: uppercase;
+            }
+            .controls-table {
+                display: flex;
+                justify-content: center;
+                .c-name {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+                .c-key {
+                    text-align: left;
+                    padding-left: 10px;
+                }
+            }
+        }
+
+
+        .author {
+            position: absolute;
+            bottom: 9px;
+            left: 35%;
+            font-size: 14px;
+        }
+    }
+    canvas {
+        display: none;
+        border: 1px solid red;
+    }
+}
+
+.canvas-wrapper {
+    
+    
+}
